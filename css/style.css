@@ -6,12 +6,14 @@
 
 .home {
   background-image: url("../images/home-bkgnd.jpg");
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  image-resolution: 1024px;
   text-align: center;
-  font-size: 80px;
+  font-size: 90px;
   font-family: "PT Serif Bold";
   padding: 250px;
 }
@@ -22,6 +24,7 @@ h1 {
   color: black;
   letter-spacing: normal;
   width: 1000px;
+  padding: 15px;
 }
 
 nav ul li {
@@ -30,14 +33,27 @@ nav ul li {
 
 .navigation {
   background: white;
-  border-radius: 10px;
+  line-height: 40px;
+  border-radius: 20px;
   border-color: black;
   border-style: solid;
   position: fixed;
   color: black;
-  padding: 10px 0;
+  padding: 10px 20px;
   text-align: center;
   right: 50px;
   top: 200px;
   margin: auto;
+}
+
+.paige {
+  image-resolution: 1024px;
+  height: 300px;
+  padding: 10px 10px 30px 200px;
+  float: left;
+}
+
+.about {
+  background-color: #fed3ce;
+  padding: 0px 0px 200px 0px;
 }
