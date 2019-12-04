@@ -13,8 +13,8 @@
   background-size: cover;
   image-resolution: 1024px;
   text-align: center;
-  font-size: 90px;
-  font-family: "PT Serif Bold";
+  font-size: 78px;
+  font-family: "PT Serif";
   padding: 250px;
 }
 
@@ -24,7 +24,16 @@ h1 {
   color: black;
   letter-spacing: normal;
   width: 1000px;
-  padding: 15px;
+  padding: 30px 0px 30px 50px;
+}
+
+h2 {
+  padding: 0px 0px 0px 250px;
+  font-family: "PT Sans";
+}
+
+h3 {
+  padding: 0px 0px 0px 280px;
 }
 
 nav ul li {
@@ -35,7 +44,7 @@ nav ul li {
   background: white;
   line-height: 40px;
   border-radius: 20px;
-  border-color: black;
+  border-color: #d9d9d9;
   border-style: solid;
   border-width: thick;
   position: fixed;
@@ -57,19 +66,14 @@ nav ul li {
 .about {
   background-color: #fed3ce;
   display: inline-block;
+  padding: 0px 0px 50px 0px;
+}
+
+.resume {
+  background-image: url("../images/resume-bkgnd.jpg");
+  padding: 0px 0px 50px 0px;
 }
 
 p {
   padding: 0px 200px 0px 300px;
-}
-
-h1 {
-  padding: 30px 0px 30px 50px;
-}
-h2 {
-  padding: 0px 0px 0px 250px;
-}
-
-h3 {
-  padding: 0px 0px 0px 280px;
 }
