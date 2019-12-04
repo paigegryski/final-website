@@ -104,8 +104,22 @@ nav ul li {
   display: block;
 }
 
+a:link {
+  color:black;
+  text-decoration: none;
+}
+a:visited {
+  color:black;
+  text-decoration: none;
+  font-family: "Lato";
+}
+
+a:hover {
+  color: darkgray;
+}
+
 .submit input {
-  background: #d9d9d9;
+  background: white;
   color: black;
   padding: 5px 20px;
   border-radius: 4px;
