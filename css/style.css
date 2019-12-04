@@ -3,6 +3,10 @@
   padding: 0;
   border: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /* Home */
 .home {
   background-image: url("../images/home-bkgnd.jpg");
@@ -15,7 +19,7 @@
   text-align: center;
   font-size: 78px;
   font-family: "PT Serif";
-  padding: 250px;
+  padding: 250px 250px 250px 0;
 }
 /* Text Styling */
 h1 {
@@ -95,12 +99,27 @@ a:hover {
   padding: 0 0 50px 50px;
   line-height: 30px;
 }
+
+/* Work */
+.work {
+  background-color: #fed3ce;
+  padding: 0 0 40px 0;
+}
+.f21, .portiko, .tesla {
+  image-resolution: 800px;
+  width: 250px;
+}
+
+.work-images {
+  padding: 0 200px 0 300px;
+}
 /* Contact */
-.facebook, .instagram, .twitter, .linkedin{
+.facebook, .instagram, .twitter, .linkedin {
   width: 70px;
   padding: 60px 100px 60px 300px;
 }
 
+/* Image Hover */
 .facebook:hover {
 width: 75px;
 }

@@ -10,6 +10,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans:700|PT+Serif:700&display=swap"rel="stylesheet">
 
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+
+    <link href="lightbox/src/css/lightbox.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -28,7 +32,7 @@
     </section>
 <!-- Home -->
     <main>
-      <section class="home"
+      <section class="home" id="home">
         <h1>Paige Gryski</h1>
       </section>
 <!-- About -->
@@ -85,6 +89,11 @@
 <!-- Work -->
         <section class="work" id="work">
           <h1>Work</h1>
+          <section class="work-images">
+            <img src="work/portiko-cover.png" alt="portiko" id="portiko" class="portiko">
+            <img src="work/tesla-cover.png" alt="tesla" id="tesla" class="tesla">
+            <img src="work/f21-cover.png" alt="f21" id="f21" class="f21">
+          </section>
         </section>
 <!-- Contact -->
         <section class="contact" id="contact">
@@ -115,5 +124,6 @@
           </section>
         </section>
     </main>
+    <script src="lightbox/src/js/lightbox.js"></script>
   </body>
 </html>
