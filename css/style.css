@@ -59,6 +59,7 @@ nav ul li {
   top: 200px;
   margin: auto;
   font-family: "PT Serif";
+  text-shadow: 1px 1px lightgray;
 }
 
 a:link {
@@ -95,9 +96,25 @@ a:hover {
   line-height: 30px;
 }
 /* Contact */
-.facebook, .instagram, .twitter, .linkedin, .email {
+.facebook, .instagram, .twitter, .linkedin{
   width: 70px;
   padding: 60px 100px 60px 300px;
+}
+
+.facebook:hover {
+width: 75px;
+}
+
+.instagram:hover {
+width: 75px;
+}
+
+.twitter:hover {
+width: 75px;
+}
+
+.linkedin:hover {
+width: 75px;
 }
 
 .contact {
