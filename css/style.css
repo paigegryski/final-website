@@ -4,9 +4,6 @@
   border: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 /* Home */
 .home {
   background-image: url("../images/home-bkgnd.jpg");
