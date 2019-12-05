@@ -18,7 +18,20 @@
   font-family: "PT Serif";
   padding: 250px 250px 250px 0;
 }
+
+header {
+  background-color: #d9d9d9;
+  width: auto;
+  height: 20px;
+}
 /* Text Styling */
+
+article {
+  font-family: "Lato";
+  font-size: 18px;
+  color: black;
+}
+
 h1 {
   font-size: 45px;
   font-family: "PT Serif";
@@ -29,16 +42,21 @@ h1 {
 }
 
 h2 {
+  font-size: 30px;
   padding: 0 0 0 250px;
   font-family: "PT Sans";
 }
 
 h3 {
   padding: 0 0 0 280px;
+  font-family: "Lato";
+  font-size: 20px;
 }
 
 p {
   font-family: "Lato";
+  font-size: 18px;
+  color: black;
 }
 /* Navigation Sidebar */
 nav ul li {
