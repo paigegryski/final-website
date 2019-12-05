@@ -32,6 +32,24 @@ article {
   color: black;
 }
 
+aside {
+  font-family: "Lato";
+  font-size: 18px;
+  color: black;
+  line-height: 35px;
+}
+
+h1::first-letter{
+  font-size: 47px;
+}
+
+figcaption {
+  font-family: "Lato";
+  font-size: 15px;
+  color: black;
+  line-height: 25px;
+}
+
 h1 {
   font-size: 45px;
   font-family: "PT Serif";
@@ -53,10 +71,29 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "PT Serif";
+  color: black;
+  letter-spacing: normal;
+  position: absolute;
+  padding: 0 0 0 550px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Lato";
+  color: black;
+  letter-spacing: normal;
+}
+
 p {
   font-family: "Lato";
   font-size: 18px;
   color: black;
+  padding: 0 200px 0 300px;
 }
 /* Navigation Sidebar */
 nav ul li {
@@ -120,6 +157,7 @@ a:hover {
   background-color: #fed3ce;
   padding: 0 0 40px 0;
 }
+
 .f21, .portiko, .tesla {
   image-resolution: 800px;
   width: 250px;
@@ -132,23 +170,6 @@ a:hover {
 .facebook, .instagram, .twitter, .linkedin {
   width: 70px;
   padding: 60px 100px 60px 300px;
-}
-
-/* Image Hover */
-.facebook:hover {
-width: 75px;
-}
-
-.instagram:hover {
-width: 75px;
-}
-
-.twitter:hover {
-width: 75px;
-}
-
-.linkedin:hover {
-width: 75px;
 }
 
 .contact {
@@ -184,7 +205,28 @@ width: 75px;
   font-family: "PT Sans";
 }
 
-
-p {
-  padding: 0 200px 0 300px;
+footer {
+  background-color: #fed3ce;
+  height: 40px;
+  text-align: center;
+  padding: 15px 0 0 0;
 }
+
+/* Image Hover */
+.facebook:hover {
+width: 75px;
+}
+
+.instagram:hover {
+width: 75px;
+}
+
+.twitter:hover {
+width: 75px;
+}
+
+.linkedin:hover {
+width: 75px;
+}
+
+/*Home Animation */
