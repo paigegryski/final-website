@@ -15,9 +15,16 @@
   text-align: center;
   font-size: 78px;
   font-family: "PT Serif";
-  padding: 250px 250px 250px 0;
   position: relative;
   z-index: -1;
+}
+
+section#home {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -83,7 +90,6 @@ h4 {
   color: black;
   letter-spacing: normal;
   position: relative;
-  padding: 0 100px 0 310px;
 }
 
 h5 {
