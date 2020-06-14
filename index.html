@@ -12,7 +12,7 @@
 </script>
 
     <title>Paige Gryski</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta name="keywords" content="portfolio graphic design advertising college student" />
     <meta name="description" content="Hey there! My name is Paige, and I'm a third-year Advertising and Web Design student at the University of Florida." />
@@ -29,9 +29,9 @@
     <script src="scripts/scripts.js" type="text/javascript"></script>
   </head>
 
-  <body>
+  <body class="site">
     <header>
-
+      <img src="images/favicon.ico" class="favicon">
     </header>
 <!-- Navigation Sidebar -->
     <section class="navigation">
@@ -52,12 +52,15 @@
       </section>
 <!-- About -->
       <section class="about" id="about">
+
         <h1>About</h1>
-        <img src="images/paige-gryski.png" alt="Paige" class="paige">
-        <article>Hey there! My name is Paige, and I'm a third-year Advertising and Web Design student at the University of Florida. I grew up on Old Bay and lacrosse in Columbia, Maryland. I have always had a passion for creating, and when I got my hands on Photoshop for the first time during my freshman year of college, I knew I didn’t want it to just be a hobby.</article>
-        <article>I have the patience and politeness of a waitress and the open mind of someone who has worked in the performing arts industry. Thanks to my time in charge of a sorority recruitment committee, I can go days on end without sleep and still demonstrate sound judgment and strong leadership. I have the loud, creative mind of an artist.</article>
-        <aside>On this website, you’ll find my resume, some work that I’ve done, and ways you can contact me.</aside>
-        <aside>Happy scrolling!</aside>
+        <container id="description">
+          <img src="images/paige-gryski.png" alt="Paige" class="paige">
+          <article>Hey there! My name is Paige, and I'm a third-year Advertising and Web Design student at the University of Florida. I grew up on Old Bay and lacrosse in Columbia, Maryland. I have always had a passion for creating, and when I got my hands on Photoshop for the first time during my freshman year of college, I knew I didn’t want it to just be a hobby.</article>
+          <article>I have the patience and politeness of a waitress and the open mind of someone who has worked in the performing arts industry. Thanks to my time in charge of a sorority recruitment committee, I can go days on end without sleep and still demonstrate sound judgment and strong leadership. I have the loud, creative mind of an artist.</article>
+          <aside>On this website, you’ll find my resume, some work that I’ve done, and ways you can contact me.</aside>
+          <aside>Happy scrolling!</aside>
+        </container>
       </section>
 <!-- Resume -->
       <section class="resume" id="resume">
@@ -73,10 +76,15 @@
 
           <h2>Work Experience</h2>
           <h3>Marketing Intern - Hippodrome Theatre</h3>
-            <p>August 2019 - Present</p>
+            <p>August 2019 - December 2019</p>
               <p>- Managed social media accounts and website</p>
               <p>- Assisted staff at shows and events</p>
               <p>- Took photos and videos for social media</p>
+          <h3>Marketing and Graphic Design Intern - Federal Communications Commission</h3>
+            <p>May 2020 - August 2020</p>
+              <p>- Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>- Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
 
           <h2>School Activities</h2>
           <h3>Frank Ambassador</h3>
@@ -103,6 +111,28 @@
 <!-- Work -->
         <section class="work" id="work">
           <h1>Work</h1>
+          <button type="button" class="collapsible">Forever 21 Advertising Research</button>
+            <div class="content">
+              <p>I designed the layout of this advertising research booklet for a group project for my Digital Insights course.</p><p>Click <a href="work/forever-21.pdf">here</a> to view PDF.</p>
+              <p>Click on each image to enlarge.</p>
+              <section class="image-grid">
+                <a href="work/f211.png" data-lightbox="work/f211.png" data-title="Forever 21 Advertising Research"> <img src="work/f211.png" alt="f211" id="f211" class="f211"></a>
+                <a href="work/f212.png" data-lightbox="work/f212.png" data-title="Forever 21 Advertising Research"> <img src="work/f212.png" alt="f212" id="f212" class="f212"></a>
+                <a href="work/f213.png" data-lightbox="work/f213.png" data-title="Forever 21 Advertising Research"> <img src="work/f213.png" alt="f213" id="f213" class="f213"></a>
+                <a href="work/f214.png" data-lightbox="work/f214.png" data-title="Forever 21 Advertising Research"> <img src="work/f214.png" alt="f214" id="f214" class="f214"></a>
+              </section>
+            </div>
+
+            <button type="button" class="collapsible">Adobe Illustrator</button>
+              <div class="content">
+                <p>These are some images I have created on Adobe Illustrator.</p> <p>Click on each image to enlarge.</p>
+                <section class="image-grid2">
+                  <a href="work/illustrator1.jpg" data-lightbox="work/illustrator1.jpg" data-title="Illustrator"> <img src="work/illustrator1.jpg" alt="ai1" id="ai1" class="ai1"></a>
+                  <a href="work/illustrator2.jpg" data-lightbox="work/illustrator2.jpg" data-title="Illustrator"> <img src="work/illustrator2.jpg" alt="ai2" id="ai2" class="ai2"></a>
+                  <a href="work/illustrator3.jpg" data-lightbox="work/illustrator3.jpg" data-title="Illustrator"> <img src="work/illustrator3.jpg" alt="ai3" id="ai3" class="ai3"></a>
+                </section>
+              </div>
+
           <section class="work-images">
             <figure>
               <a href="work/portiko-cover.png" data-lightbox="work/portiko-cover.png" data-title="Portiko Style Guide"><img src="work/portiko-cover.png" alt="portiko" id="portiko" class="portiko"></a>
