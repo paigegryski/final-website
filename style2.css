@@ -10,7 +10,7 @@ p {
 .flip-box {
   background-color: transparent;
   width: 30%;
-  height: 40%;
+  height: 50%;
   border: none;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 5%;

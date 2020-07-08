@@ -10,12 +10,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .site {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
+  flex: 1;
 }
 
-.site-content {
-	flex: 1;
-}
 
 .favicon {
   width: 5%;
@@ -47,36 +45,18 @@ section#home {
 }
 
 header {
-  background-color: #d9d9d9;
+  background-color: #4A4A4A;
   width: auto;
   padding: 1% 0 1% 0;
 }
 /* Text Styling */
 
-article {
-  font-family: "Lato";
-  font-size: 1em;
-  color: #4A4A4A;
-  padding: 3% 25% 0 0;
-  position: relative;
-  /*display: inline-block;*/
-}
-/*I need to make it so text doesn't go below photo*/
-aside {
-  font-family: "Lato";
-  font-size: 1em;
-  color: #4A4A4A;
-  padding: 3% 25% 0 0;
-  position: relative;
-  /*display: inline-block;*/
-}
-
 
 figcaption {
   font-family: "Lato";
-  font-size: 15px;
+  font-size: 1.2em;
   color: black;
-  line-height: 25px;
+  line-height: 200%;
 }
 
 h1 {
@@ -92,14 +72,14 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  padding: 3% 0 0 250px;
   font-family: "PT Sans";
+  padding: 7% 0 0 3%;
 }
 
 h3 {
-  padding: 0 0 0 280px;
   font-family: "Lato";
-  font-size: 20px;
+  font-size: 1.2em;
+  padding: 0 0 0 7%;
 }
 
 h4 {
@@ -113,7 +93,7 @@ h4 {
 
 h5 {
   text-align: center;
-  font-size: 15px;
+  font-size: 1em;
   font-family: "Lato";
   color: black;
   letter-spacing: normal;
@@ -121,9 +101,9 @@ h5 {
 
 p {
   font-family: "Lato";
-  font-size: 18px;
+  font-size: 1em;
   color: black;
-  padding: 0 200px 0 300px;
+  padding-left: 12%;
 }
 /* Navigation Sidebar */
 nav ul li {
@@ -131,18 +111,18 @@ nav ul li {
 }
 
 .navigation {
-  background: white;
+  background: #F5E6E8;
   line-height: 40px;
-  border-radius: 15px;
-  border-color: #010C36;
+  border-radius: 3%;
+  border-color: #4A4A4A;
   border-style: solid;
   border-width: thick;
   position: fixed;
-  color: black;
-  padding: 10px 20px;
+  color: #4A4A4A;
+  padding: 1% 2%;
   text-align: center;
-  right: 50px;
-  top: 200px;
+  right: 2%;
+  top: 35%;
   margin: auto;
   font-family: "PT Serif";
   text-shadow: 1px 1px lightgray;
@@ -163,26 +143,60 @@ a:hover {
 
 /* About */
 .paige {
-  width: 20%;
-  padding: 3% 10px 30px 200px;
-  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 5%;
+  max-width: 300px;
 }
-/*I want to get rid of the float but still have the picture to the left of the text, and I don't want any of the text to go below the photo*/
+
+.grid2 {
+  max-width: 50%;
+  margin: auto;
+}
+article {
+  font-family: "Lato";
+  font-size: 1em;
+  color: #4A4A4A;
+  display: inline-block;
+  padding-top: 6%;
+}
+
+aside {
+  font-family: "Lato";
+  font-size: 1em;
+  color: #4A4A4A;
+  display: inline-block;
+  padding-top: 4%;
+}
 
 .about {
   background-color: #F5E6E8;
-  display: inline-block;
   padding: 0 0 5% 0;
   /*display: inline-block;*/
 }
+
+
 /* Resume */
 .resume {
   background-image: url("../images/resume-bkgnd.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.education, .workexp, .school, .skills {
+  max-width: 70%;
 }
 
 .resume-content {
-  padding: 0 0 50px 50px;
-  line-height: 30px;
+  line-height: 180%;
+  display: flex;
+  align-content: flex-start;
+  display:grid;
+  margin-left: 10%;
+  padding-bottom: 7%;
 }
 /* Work */
 /* Style the button that is used to open and close the collapsible content */
@@ -195,27 +209,33 @@ a:hover {
   border: none;
   text-align: center;
   outline: none;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Lato";
-  border-radius: 1%;
-  border-style: double;
-  border-color: #A66F89;
+}
+.arrow {
+  border: solid #4A4A4A;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .collapsible:hover {
   background-color: #A66F89;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
-  font-size: .8rem;
+  font-size: .8em;
   background-color: #F5E6E8;
-  padding: 3% 10% 3% 10%;
+  padding: 3% 15% 3% 15%;
 }
 
 .content2 {
-  font-size: .8rem;
+  font-size: .8em;
   background-color: #F5E6E8;
   padding: 3% 15% 3% 15%;
 }
@@ -234,8 +254,8 @@ a:hover {
 	/* justify-content: space-between; */
 	/* max-width: 600px; */
 	margin: auto;
-  justify-content: center;
   align-items: flex-start;
+  padding: 3% 15% 0 15%;
 }
 
 .image-grid2 {
@@ -246,11 +266,23 @@ a:hover {
 	margin: auto;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 3%;
 }
+
+.f21logo {
+  width: 20%;
+  margin: auto;
+}
+
+.ailogo {
+  width: 10%;
+  margin: auto;
+}
+
 /* Contact */
 .facebook, .twitter, .linkedin {
-  width: 70px;
-  padding: 60px 100px 60px 300px;
+  width: 5%;
+  padding: 6% 5% 6% 10%;
 }
 
 .contact {
@@ -260,19 +292,18 @@ a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 20px 0 20px 0;
 }
 
 .contactform {
-    padding: 60px 100px 60px 300px;
+    padding: 6% 10% 6% 30%;
 }
 
 .test_form {
   max-width: 500px;
-  border-radius: 10px;
+  border-radius: 2%;
   color: black;
-  padding: 0 0 0 50px;
-  margin: 40px auto;
+  padding: 0 0 0 5%;
+  margin: 4% auto;
   font-family: "Lato";
   display: block;
 }
@@ -286,23 +317,10 @@ a:hover {
 }
 
 footer {
-  background-color: #fed3ce;
+  background-color: #F5E6E8;
   height: 40px;
   text-align: center;
   padding: 15px 0 0 0;
-}
-
-/* Image Hover */
-.facebook:hover {
-width: 72px;
-}
-
-.twitter:hover {
-width: 72px;
-}
-
-.linkedin:hover {
-width: 72px;
 }
 
 /*Home Animation */
@@ -313,10 +331,166 @@ h4 {
   animation-fill-mode: forwards;
 }
 
+/*Responsive 640px*/
+@media (max-width: 640px) {
+  .navigation {
+    line-height: 180%;
+    border-radius: 1%;
+    border-color: #4A4A4A;
+    border-style: solid;
+    border-width: medium;
+    position: fixed;
+    color: #4A4A4A;
+    text-align: center;
+    top: 35%;
+    font-family: "PT Serif";
+    text-shadow: 1px 1px lightgray;
+    z-index: 1;
+}
+    nav ul li {
+      font-size: .8rem;
+      padding: 2%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-family: "PT Sans";
+      padding: 7% 0 0 3%;
+    }
+
+    h3 {
+      font-family: "Lato";
+      font-size: .9em;
+      padding: 0 0 0 7%;
+    }
+
+    h4 {
+    font-size: 3em;
+    }
+
+    p {
+      font-size: .8em;
+    }
+
+    .home {
+      position: relative;
+      z-index: -1;
+    }
+
+    .image-grid {
+    	display: flex;
+    	flex-wrap: nowrap;
+    	/* justify-content: space-between; */
+    	/* max-width: 600px; */
+    	margin: auto;
+      align-items: flex-start;
+      padding: 3% 10% 0 10%;
+    }
+
+    .submit input {
+      padding: 2% 5%;
+      border-radius: 2%;
+    }
+
+	}
+/* end (640px)*/
+/*Responsive 480px*/
+@media (max-width: 480px) {
+  h4 {
+    font-size: 2rem;
+  }
+
+  article {
+    font-size: .8rem;
+  }
+
+  aside {
+    font-size: .8rem;
+  }
+
+  figcaption {
+    font-family: "Lato";
+    font-size: 1rem;
+    color: black;
+    line-height: 150%;
+  }
+
+  nav ul li {
+    font-size: .6em;
+  }
+
+  .nagivation {
+    line-height: 80%;
+  }
+
+
+  .contactform {
+      padding: 3% 5% 3% 10%;
+  }
+
+  .test_form {
+    max-width: 60%;
+    border-radius: 2%;
+    color: black;
+    padding: 0;
+    margin: 4% auto;
+    font-family: "Lato";
+    display: block;
+  }
+
+}
+/*end (480px)*/
+/*Responsive 360px*/
+@media (max-width: 360px) {
+  .navigation {
+    line-height: 150%;
+    border-radius: 1%;
+    border-color: #4A4A4A;
+    border-style: solid;
+    border-width: medium;
+    position: fixed;
+    color: #4A4A4A;
+    text-align: center;
+    top: 35%;
+    font-family: "PT Serif";
+    text-shadow: 1px 1px lightgray;
+    z-index: 1;
+}
+
+    nav ul li {
+      font-size: .5em;
+    }
+
+    article {
+      font-size: .7rem;
+    }
+
+    aside {
+      font-size: .7rem;
+    }
+
+  .contactform {
+    max-width: 20%;
+    padding-left: 5%;
+  }
+
+  figcaption {
+    font-family: "Lato";
+    font-size: .8rem;
+    color: black;
+    line-height: 120%;
+  }
+}
+/*end (360px)*/
 @keyframes fadeInAnimation {
   0% {
   opacity: 0;
 }
 100% {
   opacity: 1;
+}
 }
