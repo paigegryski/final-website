@@ -26,14 +26,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .home {
   background-image: url("../images/home-bkgnd.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   text-align: center;
   font-family: "PT Serif";
   position: relative;
   z-index: -1;
+  image-resolution: 500;
 }
 
 section#home {
@@ -214,15 +212,10 @@ aside {
 }
 .arrow {
   border: solid #4A4A4A;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
 }
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
 
 .active, .collapsible:hover {
   background-color: #A66F89;
@@ -241,11 +234,11 @@ aside {
 }
 
 .f211, .f212, .f213, .f214 {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .ai1, .ai2, .ai3 {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .image-grid {
@@ -288,9 +281,6 @@ aside {
 .contact {
   background-image: url("../images/contact-bkgnd.jpg");
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -347,6 +337,11 @@ h4 {
     text-shadow: 1px 1px lightgray;
     z-index: 1;
 }
+
+    .resume-content {
+      line-height: 150%;
+    }
+
     nav ul li {
       font-size: .8rem;
       padding: 2%;
@@ -364,7 +359,7 @@ h4 {
 
     h3 {
       font-family: "Lato";
-      font-size: .9em;
+      font-size: .8em;
       padding: 0 0 0 7%;
     }
 
@@ -414,7 +409,7 @@ h4 {
 
   figcaption {
     font-family: "Lato";
-    font-size: 1rem;
+    font-size: .8rem;
     color: black;
     line-height: 150%;
   }
